@@ -3,12 +3,19 @@
 # Python Version 3.9.1
 
 class Book:
-    def __init(self, author, title):
+
+    def __init__(self, author = "", title = ""):
         self.author = author
         self.title = title 
     
     def display(self):
-        pass
+        print(f"{self.title}, written by {self.author}")
         
 if __name__ == "__main__":
-    pass
+    first_book = Book("John Steinbeck", "Of Mice and Men")
+    second_book = Book("Harper Lee", "To Kill a Mockingbird")
+    first_book.display()
+    second_book.display()
+
+
+
